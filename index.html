@@ -2,22 +2,118 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>My GitHub Website</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Farshad Safavi | AI Researcher</title>
   <style>
     body {
-      font-family: sans-serif;
-      background-color: #f5f5f5;
+      font-family: 'Segoe UI', sans-serif;
+      margin: 0;
+      background: #f5f5f5;
+      color: #333;
+    }
+    header {
+      background-color: #222;
+      color: #fff;
+      padding: 2rem;
       text-align: center;
-      margin-top: 100px;
     }
     h1 {
-      color: #007acc;
+      margin-bottom: 0.2rem;
+    }
+    nav {
+      background-color: #444;
+      text-align: center;
+      padding: 1rem;
+    }
+    nav a {
+      color: white;
+      text-decoration: none;
+      margin: 0 1rem;
+      font-weight: bold;
+    }
+    section {
+      padding: 2rem;
+      max-width: 900px;
+      margin: auto;
+    }
+    .project {
+      background-color: white;
+      border-radius: 8px;
+      padding: 1rem;
+      margin-bottom: 1rem;
+      box-shadow: 0 0 5px rgba(0,0,0,0.1);
+    }
+    footer {
+      text-align: center;
+      background: #222;
+      color: #ccc;
+      padding: 1rem;
+      margin-top: 2rem;
+    }
+    @media (max-width: 600px) {
+      nav a {
+        display: block;
+        margin: 0.5rem 0;
+      }
     }
   </style>
 </head>
 <body>
-  <h1>Welcome to My GitHub Website!</h1>
-  <p>This is a simple site hosted with GitHub Pages.</p>
+
+  <header>
+    <h1>Farshad Safavi</h1>
+    <p>Ph.D. Candidate | AI Researcher | Human-Robot Interaction</p>
+  </header>
+
+  <nav>
+    <a href="#about">About</a>
+    <a href="#projects">Projects</a>
+    <a href="#contact">Contact</a>
+  </nav>
+
+  <section id="about">
+    <h2>About Me</h2>
+    <p>
+      I am a Ph.D. candidate in Computer Science with expertise in AI, computer vision, and neurophysiological signal processing.
+      My work focuses on real-time multimodal systems for affective computing and human-robot interaction. I combine deep learning with bio-signals and visual features to build intelligent systems.
+    </p>
+  </section>
+
+  <section id="projects">
+    <h2>Projects</h2>
+
+    <div class="project">
+      <h3>🔬 Deep Multimodal Emotion Recognition</h3>
+      <p>
+        Developed a Transformer-based network to fuse facial expressions and EEG data. Achieved state-of-the-art performance on DEAP dataset (97%+ accuracy). Presented at IEEE EMBS 2024.
+      </p>
+    </div>
+
+    <div class="project">
+      <h3>🛰️ Real-Time Remote Sensing Segmentation</h3>
+      <p>
+        Designed an optimized semantic segmentation model for large aerial images on Jetson devices. Deployed in the field with real-time performance and minimal power consumption.
+      </p>
+    </div>
+
+    <div class="project">
+      <h3>🤖 Affective Robotic Arm</h3>
+      <p>
+        Created a robotic arm that adapts to users’ emotional states using facial expression recognition and EEG. Enhanced HRI and responsiveness in real-world testing.
+      </p>
+    </div>
+
+  </section>
+
+  <section id="contact">
+    <h2>Contact</h2>
+    <p>Email: <a href="mailto:farshad.safavi@example.com">farshad.safavi@example.com</a></p>
+    <p>GitHub: <a href="https://github.com/farshadsafavi" target="_blank">github.com/farshadsafavi</a></p>
+  </section>
+
+  <footer>
+    <p>© 2025 Farshad Safavi. All rights reserved.</p>
+  </footer>
+
 </body>
 </html>
