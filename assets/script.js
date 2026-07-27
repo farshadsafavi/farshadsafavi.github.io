@@ -11,19 +11,24 @@ document.querySelectorAll('.nav-links a').forEach(link => {
 });
 
 const firstAuthorOnly = document.getElementById('firstAuthorOnly');
+const publicationSearch = document.getElementById('publicationSearch');
 const yearButtons = document.querySelectorAll('.year');
 const publications = document.querySelectorAll('.publication');
 let activeYear = 'all';
 
 function filterPublications() {
+  const query = (publicationSearch?.value || '').trim().toLowerCase();
+
   publications.forEach(pub => {
     const authorMatch = !firstAuthorOnly.checked || pub.classList.contains('first-author');
     const yearMatch = activeYear === 'all' || pub.dataset.year === activeYear;
-    pub.style.display = authorMatch && yearMatch ? 'block' : 'none';
+    const searchMatch = !query || (pub.dataset.search || pub.textContent.toLowerCase()).includes(query);
+    pub.style.display = authorMatch && yearMatch && searchMatch ? 'block' : 'none';
   });
 }
 
 firstAuthorOnly.addEventListener('change', filterPublications);
+publicationSearch.addEventListener('input', filterPublications);
 
 yearButtons.forEach(button => {
   button.addEventListener('click', () => {
