@@ -2,118 +2,227 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Farshad Safavi | AI Researcher</title>
-  <style>
-    body {
-      font-family: 'Segoe UI', sans-serif;
-      margin: 0;
-      background: #f5f5f5;
-      color: #333;
-    }
-    header {
-      background-color: #222;
-      color: #fff;
-      padding: 2rem;
-      text-align: center;
-    }
-    h1 {
-      margin-bottom: 0.2rem;
-    }
-    nav {
-      background-color: #444;
-      text-align: center;
-      padding: 1rem;
-    }
-    nav a {
-      color: white;
-      text-decoration: none;
-      margin: 0 1rem;
-      font-weight: bold;
-    }
-    section {
-      padding: 2rem;
-      max-width: 900px;
-      margin: auto;
-    }
-    .project {
-      background-color: white;
-      border-radius: 8px;
-      padding: 1rem;
-      margin-bottom: 1rem;
-      box-shadow: 0 0 5px rgba(0,0,0,0.1);
-    }
-    footer {
-      text-align: center;
-      background: #222;
-      color: #ccc;
-      padding: 1rem;
-      margin-top: 2rem;
-    }
-    @media (max-width: 600px) {
-      nav a {
-        display: block;
-        margin: 0.5rem 0;
-      }
-    }
-  </style>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Academic website of Farshad Safavi" />
+  <title>Farshad Safavi | Medical Imaging & AI</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Source+Serif+4:ital@0;1&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/style.css" />
 </head>
 <body>
-
-  <header>
-    <h1>Farshad Safavi</h1>
-    <p>Ph.D. Candidate | AI Researcher | Human-Robot Interaction</p>
+  <header class="site-header">
+    <nav class="nav container">
+      <a class="brand" href="#top">Farshad Safavi</a>
+      <button class="menu-button" aria-label="Open navigation" aria-expanded="false">☰</button>
+      <div class="nav-links">
+        <a href="#about">About</a>
+        <a href="#news">News</a>
+        <a href="#publications">Publications</a>
+        <a href="#projects">GitHub Projects</a>
+        <a href="#talks">Talks</a>
+        <a href="#service">Academic Service</a>
+        <a href="#contact">Contact</a>
+      </div>
+    </nav>
   </header>
 
-  <nav>
-    <a href="#about">About</a>
-    <a href="#projects">Projects</a>
-    <a href="#contact">Contact</a>
-  </nav>
-
-  <section id="about">
-    <h2>About Me</h2>
-    <p>
-      I am a Ph.D. candidate in Computer Science with expertise in AI, computer vision, and neurophysiological signal processing.
-      My work focuses on real-time multimodal systems for affective computing and human-robot interaction. I combine deep learning with bio-signals and visual features to build intelligent systems.
-    </p>
-  </section>
-
-  <section id="projects">
-    <h2>Projects</h2>
-
-    <div class="project">
-      <h3>🔬 Deep Multimodal Emotion Recognition</h3>
-      <p>
-        Developed a Transformer-based network to fuse facial expressions and EEG data. Achieved state-of-the-art performance on DEAP dataset (97%+ accuracy). Presented at IEEE EMBS 2024.
-      </p>
+  <div class="announcement">
+    <div class="container announcement-inner">
+      <span class="badge">NEW</span>
+      <span><strong>ASTRO 2026 Oral Presentation</strong> — Boston, September 2026</span>
+      <a href="#news" class="announcement-button">View update →</a>
     </div>
+  </div>
 
-    <div class="project">
-      <h3>🛰️ Real-Time Remote Sensing Segmentation</h3>
-      <p>
-        Designed an optimized semantic segmentation model for large aerial images on Jetson devices. Deployed in the field with real-time performance and minimal power consumption.
-      </p>
+  <main id="top">
+    <section class="hero">
+      <div class="container hero-grid">
+        <div class="portrait-wrap">
+          <img src="assets/profile-placeholder.svg" alt="Farshad Safavi" class="portrait" />
+        </div>
+        <div>
+          <h1>Farshad Safavi</h1>
+          <p class="hero-role">Research Fellow</p>
+          <p>Department of Radiation Oncology</p>
+          <p>University of Maryland School of Medicine</p>
+          <div class="social-row">
+            <a href="#" aria-label="Google Scholar">GS</a>
+            <a href="https://github.com/" aria-label="GitHub">GH</a>
+            <a href="https://www.linkedin.com/" aria-label="LinkedIn">in</a>
+            <a href="https://orcid.org/" aria-label="ORCID">iD</a>
+            <a href="mailto:FSafavi@som.umaryland.edu" aria-label="Email">✉</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="about" class="section alt">
+      <div class="container narrow">
+        <h2>About Me</h2>
+        <p>
+          I am a Research Fellow in the Department of Radiation Oncology at the
+          University of Maryland School of Medicine. My research focuses on artificial
+          intelligence for medical imaging, proton therapy, prompt-gamma imaging,
+          volumetric image synthesis, and efficient deep-learning models.
+        </p>
+        <p>
+          I am particularly interested in conditional diffusion models, 3D medical-image
+          synthesis, semantic segmentation, super-resolution, and clinically deployable
+          AI systems for image-guided radiation therapy.
+        </p>
+      </div>
+    </section>
+
+    <section id="news" class="section">
+      <div class="container narrow">
+        <h2>News & Updates</h2>
+
+        <article class="news-item">
+          <span class="date">JULY 2026</span>
+          <h3>Manuscript submitted to Physics in Medicine & Biology</h3>
+          <p>
+            Our manuscript on the first nozzle-mounted Compton-camera prompt-gamma
+            imaging system for in-vivo proton therapy range verification was submitted.
+          </p>
+        </article>
+
+        <article class="news-item">
+          <span class="date">JULY 2026</span>
+          <h3>AAPM | COMP 2026 presentation</h3>
+          <p>
+            Presented a conditional wavelet-diffusion framework with depthwise
+            convolutions for high-resolution 3D medical-image synthesis.
+          </p>
+        </article>
+
+        <article class="news-item">
+          <span class="date">SEPTEMBER 2026</span>
+          <h3>ASTRO 2026 oral presentation</h3>
+          <p>
+            Selected for an oral presentation on clinical integration of a
+            nozzle-mounted quad-camera prompt-gamma imaging system.
+          </p>
+        </article>
+      </div>
+    </section>
+
+    <section id="publications" class="section alt">
+      <div class="container narrow">
+        <h2>Publications</h2>
+        <p class="section-intro">Selected research articles and manuscripts. First-author contributions are highlighted.</p>
+
+        <div class="filters">
+          <label class="toggle-label">
+            <input type="checkbox" id="firstAuthorOnly">
+            <span>Show first-author publications only</span>
+          </label>
+          <div class="year-filters">
+            <button class="year active" data-year="all">All</button>
+            <button class="year" data-year="2026">2026</button>
+            <button class="year" data-year="2025">2025</button>
+          </div>
+        </div>
+
+        <div id="publicationList">
+          <article class="publication first-author" data-year="2026">
+            <h3>Conditional Wavelet Diffusion With Depthwise Separable Convolutions for High-Resolution 3D Medical Image Synthesis</h3>
+            <p><strong>Farshad Safavi</strong>, Aman Sangal, Hualiang Zhong, Lei Ren</p>
+            <p class="venue">Manuscript, 2026</p>
+            <div class="buttons">
+              <a href="#">PDF</a><a href="#">Code</a><a href="#">BibTeX</a>
+            </div>
+          </article>
+
+          <article class="publication first-author" data-year="2026">
+            <h3>The First Nozzle-Mounted Compton Camera Prompt Gamma Imaging System for In Vivo Proton Therapy Range Verification</h3>
+            <p><strong>Farshad Safavi</strong>, Stephen W. Peterson, Sina Mossahebi, Ananta Chalise, Matthias K. Gobbert, Jerimy C. Polf, Lei Ren</p>
+            <p class="venue">Submitted to Physics in Medicine & Biology, 2026</p>
+            <div class="buttons">
+              <a href="#">Project Page</a><a href="#">PDF</a><a href="#">BibTeX</a>
+            </div>
+          </article>
+
+          <article class="publication" data-year="2025">
+            <h3>Additional publication title</h3>
+            <p>Author list with <strong>Farshad Safavi</strong></p>
+            <p class="venue">Journal or Conference, 2025</p>
+            <div class="buttons">
+              <a href="#">PDF</a><a href="#">Code</a><a href="#">BibTeX</a>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section id="projects" class="section">
+      <div class="container narrow">
+        <h2>GitHub Projects</h2>
+        <p class="section-intro">A collection of selected public repositories.</p>
+        <div class="card-grid">
+          <a class="project-card" href="https://github.com/farshadsafavi" target="_blank">
+            <h3>Prompt-Gamma Image Enhancement</h3>
+            <p>Deep-learning methods for reconstruction correction and super-resolution.</p>
+            <span>★ Python</span>
+          </a>
+          <a class="project-card" href="https://github.com/farshadsafavi" target="_blank">
+            <h3>Panoramic Ultrasound Segmentation</h3>
+            <p>3D multi-organ semantic segmentation for panoramic ultrasound.</p>
+            <span>★ PyTorch</span>
+          </a>
+          <a class="project-card" href="https://github.com/farshadsafavi" target="_blank">
+            <h3>FloodNet Edge Segmentation</h3>
+            <p>Efficient Mask2Former-style semantic segmentation for UAV deployment.</p>
+            <span>★ Python</span>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <section id="talks" class="section alt">
+      <div class="container narrow">
+        <h2>Invited Talks & Presentations</h2>
+        <div class="wide-card">
+          <h3>Clinical Prompt-Gamma Imaging for Proton Range Verification</h3>
+          <p class="venue">ASTRO Annual Meeting · Boston · 2026</p>
+          <a class="small-button" href="#">Slides</a>
+        </div>
+      </div>
+    </section>
+
+    <section id="service" class="section">
+      <div class="container narrow">
+        <h2>Academic Service</h2>
+        <h3>Journal Reviewer</h3>
+        <ul>
+          <li>IEEE Transactions on Medical Imaging</li>
+          <li>IEEE Transactions on Biomedical Engineering</li>
+          <li>Medical Physics</li>
+        </ul>
+        <h3>Conference Reviewer</h3>
+        <ul>
+          <li>MICCAI Workshops</li>
+          <li>Medical Imaging with Deep Learning</li>
+          <li>IEEE International Symposium on Biomedical Imaging</li>
+        </ul>
+      </div>
+    </section>
+  </main>
+
+  <footer id="contact">
+    <div class="container narrow">
+      <h2>Contact</h2>
+      <p>Email: <a href="mailto:FSafavi@som.umaryland.edu">FSafavi@som.umaryland.edu</a></p>
+      <div class="footer-links">
+        <a href="#">Google Scholar</a>
+        <a href="https://github.com/farshadsafavi">GitHub</a>
+        <a href="#">LinkedIn</a>
+        <a href="#">ORCID</a>
+      </div>
+      <p class="copyright">© 2026 Farshad Safavi</p>
     </div>
-
-    <div class="project">
-      <h3>🤖 Affective Robotic Arm</h3>
-      <p>
-        Created a robotic arm that adapts to users’ emotional states using facial expression recognition and EEG. Enhanced HRI and responsiveness in real-world testing.
-      </p>
-    </div>
-
-  </section>
-
-  <section id="contact">
-    <h2>Contact</h2>
-    <p>Email: <a href="mailto:farshad.safavi@example.com">farshad.safavi@example.com</a></p>
-    <p>GitHub: <a href="https://github.com/farshadsafavi" target="_blank">github.com/farshadsafavi</a></p>
-  </section>
-
-  <footer>
-    <p>© 2025 Farshad Safavi. All rights reserved.</p>
   </footer>
 
+  <script src="assets/script.js"></script>
 </body>
 </html>
